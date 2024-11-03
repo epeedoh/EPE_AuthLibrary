@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.1.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<!-- Framework cible unique -->
+		<TargetFramework>net8.0</TargetFramework>
+
+		<!-- Activons les using implicites et la gestion des valeurs nullables -->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Générer le package NuGet lors de la compilation -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+		<!-- Métadonnées NuGet -->
+		<PackageId>EPE.Auth</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>EPE Edoh</Authors>
+		<Company>EPE</Company>
+		<Description>Bibliothèque d'authentification réutilisable pour gérer les utilisateurs et les tokens JWT.</Description>
+		<PackageTags>authentication;auth;security;jwt;nuget</PackageTags>
+		<RepositoryUrl>https://github.com/epeedoh</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	
+</Project>
